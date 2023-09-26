@@ -666,6 +666,17 @@ video {
   src: url(/src/fonts/omotionvhs.otf);
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  #footer {
+    position: sticky;
+    bottom: 0;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
 :is(.dark .dark\:bg-txtcolor) {
   --tw-bg-opacity: 1;
   background-color: rgb(1 13 19 / var(--tw-bg-opacity));
