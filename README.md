@@ -15,3 +15,5 @@ For occasions when the [website](https://bvndls.com) is under maintenance or una
 - [Arc](https://arc.net/) browser detection
 - Application of Arc's custom themes
 - 3D animations/background
+- Docker compose for easy deploy
+- Config for different stub elements (e.g. logo, text, transition\animation speed)
