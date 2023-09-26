@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>stub-tailwind</title>
+  <script src="/src/app.js"></script>
+</head>
+<!-- try fixed position for the header -->
+<body class="flex flex-col justify-between h-screen w-screen bg-bgcolor dark:bg-txtcolor transition duration-1000">
+    <div id="header" class="sticky top-0 p-2 flex flex-row w-full justify-between">
+        <p id="bvndls" class="font-omotion text-4xl text-txtcolor dark:text-bgcolor">bvndls</p>
+        <img src="/src/res/darkmode.svg" alt="darkmode toggle" class="w-10 h-10 dark:invert darkmode">
+    </div>
+    <div id="content" class="px-2 flex-grow flex justify-center items-center">
+        <p id="stubtext" class="font-alexandria text-4xl xl:text-5xl text-txtcolor dark:text-bgcolor whitespace-pre-line text-center md:whitespace-normal">The <span class="stubtext">website</span>
+            will be available
+            as soon as possible</p>
+    </div>
+    <div id="footer" class="flex justify-center items-center gap-2 mt-auto p-2">
+        <a href="https://linkedin.com/in/bvndls/">
+        <img src="/src/res/linkedin.svg" alt="linkedin profile page" class="w-10 h-10 dark:invert">
+        </a>
+        <a href="https://t.me/bvndls0">
+        <img src="/src/res/telegram.svg" alt="telegram contact" class="w-10 h-10 dark:invert">
+        </a>
+        <a href="https://github.com/bvndls">
+        <img src="/src/res/github.svg" alt="github profile page" class="w-10 h-10 dark:invert">
+        </a>
+        <a href="/src/res/cv-test.pdf">
+        <img src="/src/res/cv.svg" alt="cv download link" class="w-10 h-10 dark:invert">
+        </a>
+    </div>
+</body>
+</html>
