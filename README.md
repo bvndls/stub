@@ -4,16 +4,16 @@
 
 For occasions when the [website](https://bvndls.com) is under maintenance or unavailable
 - HTML
-- TailwindCSS
 - vanilla JS
+- TailwindCSS
 
 ## Features
-- Browser-agnostic dark mode
 - Text gradient animation
+- Browser-agnostic dark mode
 
 ## Upcoming
 - [Arc](https://arc.net/) browser detection
-- Application of Arc's custom themes
 - 3D animations/background
 - Docker compose for easy deploy
+- Application of [Arc's](https://arc.net/) custom themes
 - Config for different stub elements (e.g. logo, text, transition\animation speed)
