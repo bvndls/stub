@@ -1,4 +1,4 @@
-# Minimalist stub with text animations and more
+# Minimalistic stub with text animations and more
 ![Last Commit](https://img.shields.io/github/last-commit/bvndls/stub?style=flat-square&svg=true)
 ![License](https://img.shields.io/github/license/bvndls/stub?style=flat-square&svg=true)
 
