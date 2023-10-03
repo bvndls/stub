@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // define elements from stylesheet
-  const spanElement = document.querySelector('span.stubtext');
+  const spanElement = document.querySelector('span.jstext');
   const darkModeIcon = document.querySelector('.darkmode');
 
   // initial text color
@@ -23,3 +23,9 @@ darkModeIcon.addEventListener('click', function() {
   document.documentElement.classList.toggle('dark');
   });
 });
+
+// arc checker
+console.log(
+  getComputedStyle(document.documentElement)
+  .getPropertyValue('--arc-palette-title') ? 'Is Arc' : 'Is Not Arc'
+);
