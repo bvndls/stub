@@ -7,21 +7,21 @@
   <title>website unavailable</title>
   <script src="/src/app.js"></script>
 </head>
-<body class="flex flex-col justify-between h-screen w-screen bg-bgcolor dark:bg-txtcolor transition duration-1000">
+<body class="flex flex-col justify-between h-screen w-screen bg-bgcolor dark:bg-dark_bgcolor transition duration-1000">
     <div id="header" class="sticky top-0 p-2 flex flex-row w-full justify-between">
-        <p id="bvndls" class="font-omotion text-4xl text-txtcolor dark:text-bgcolor">bvndls</p>
+        <p id="bvndls" class="font-omotion text-4xl text-txtcolor dark:text-dark_txtcolor">bvndls</p>
         <img src="/src/res/darkmode.svg" alt="darkmode toggle" class="w-10 h-10 dark:invert darkmode">
     </div>
     <div id="content" class="px-2 flex-grow flex justify-center items-center">
-        <p id="stubtext" class="font-alexandria text-4xl xl:text-5xl text-txtcolor dark:text-bgcolor whitespace-pre-line text-center md:whitespace-normal">The <span class="jstext">website</span>
+        <p id="stubtext" class="font-alexandria text-4xl xl:text-5xl text-txtcolor dark:text-dark_txtcolor whitespace-pre-line text-center md:whitespace-normal">The <span class="jstext">website</span>
             will be available
             as soon as possible</p>
     </div>
     <div id="footer" class="flex justify-center items-center gap-2 mt-auto p-2">
         <!-- should be disabled on mobile -->
-        <div id="arcfeature" class="absolute left-2 bottom-2 mr-auto h-auto w-auto rounded-md bg-secondary flex items-center justify-center">
-            <img src="/src/res/arc.svg" alt="arc browser logo" class="w-14 h-14 border-4 border-txtcolor rounded-md">
-            <p id="arctext" class="text-2xl p-2.5">Using <span class="jstext font-alexandria">Arc</span>? Try this out!</p>
+        <div id="arcfeature" class="absolute left-2 bottom-2 mr-auto h-auto w-auto rounded-md bg-secondary dark:bg-dark_secondary flex items-center justify-center transition duration-200 ease-in-out">
+            <img src="/src/res/arc.svg" alt="arc browser logo" class="w-10 h-10 border-txtcolor shadow-inner dark:shadow-none rounded-md dark:shadow-secondary">
+            <p id="arctext" class="text-lg px-2 py-1.5 dark:text-dark_txtcolor">Using <span class="jstext font-alexandria">Arc</span>? Try this out!</p>
         </div>
         <!-- end -->
         <a href="https://linkedin.com/in/bvndls/">
