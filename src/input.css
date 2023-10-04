@@ -21,3 +21,17 @@
         overflow: hidden;
     }
   }
+
+/* arc styling */
+.arc .arc\:foregroundPrimary {
+    @apply bg-foregroundPrimary;
+  }
+
+.arc .arc\:bg-hover {
+    @apply bg-hover;
+  }
+
+.arc .arc\:hover\:bg-focus {
+    @apply hover:bg-focus;
+  }
+/* add custom arc styles here */

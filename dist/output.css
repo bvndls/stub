@@ -738,6 +738,22 @@ video {
   }
 }
 
+/* arc styling */
+
+.arc .arc\:foregroundPrimary {
+  background-color: var(--arc-palette-foregroundPrimary);
+}
+
+.arc .arc\:bg-hover {
+  background-color: var(--arc-palette-hover);
+}
+
+.arc .arc\:hover\:bg-focus:hover {
+  background-color: var(--arc-palette-focus);
+}
+
+/* add custom arc styles here */
+
 .hover\:bg-hover:hover {
   background-color: var(--arc-palette-hover);
 }

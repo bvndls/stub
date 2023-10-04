@@ -8,19 +8,28 @@ document.addEventListener('DOMContentLoaded', function() {
   // define elements from stylesheet
   const spanElement = document.querySelector('span.jstext');
   const darkModeIcon = document.querySelector('.darkmode');
-
-  // initial text color
-  // spanElement.style.color = '##010d13';
+  const arcFeatureDiv = document.getElementById("arcfeature");
+  
+  // arcfeature click listener
+  arcFeatureDiv.addEventListener("click", function() {
+    if(document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+    }
+    document.documentElement.classList.toggle("arc");  
+  });
 
   // animation
   setInterval(function() {
     spanElement.style.transition = 'color 5s';
     spanElement.style.color = getRandomColor();
   }, 2000);
-
-// click listener
-darkModeIcon.addEventListener('click', function() {
-  document.documentElement.classList.toggle('dark');
+  
+  // darkmode click listener
+  darkModeIcon.addEventListener('click', function() {
+    if(document.documentElement.classList.contains("arc")) {
+      document.documentElement.classList.remove("arc");
+    }
+    document.documentElement.classList.toggle('dark');
   });
 });
 

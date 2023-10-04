@@ -7,7 +7,7 @@
   <title>website unavailable</title>
   <script src="/src/app.js"></script>
 </head>
-<body class="flex flex-col justify-between h-screen w-screen bg-bgcolor dark:bg-dark_bgcolor transition duration-1000">
+<body class="flex flex-col justify-between h-screen w-screen bg-bgcolor dark:bg-dark_bgcolor transition duration-1000 arc:foregroundPrimary">
     <div id="header" class="sticky top-0 p-2 flex flex-row w-full justify-between">
         <p id="bvndls" class="font-omotion text-4xl text-txtcolor dark:text-dark_txtcolor">bvndls</p>
         <img src="/src/res/darkmode.svg" alt="darkmode toggle" class="w-10 h-10 dark:invert darkmode">
@@ -19,7 +19,7 @@
     </div>
     <div id="footer" class="flex justify-center items-center gap-2 mt-auto p-2">
         <!-- should be disabled on mobile -->
-        <div id="arcfeature" class="absolute left-2 bottom-2 mr-auto h-auto w-auto rounded-md bg-secondary dark:bg-dark_secondary flex items-center justify-center transition duration-200 ease-in-out hover:bg-hover">
+        <div id="arcfeature" class="arcfeature absolute left-2 bottom-2 mr-auto h-auto w-auto rounded-md bg-secondary dark:bg-dark_secondary flex items-center justify-center transition duration-200 ease-in-out hover:bg-hover arc:bg-hover arc:hover:bg-focus">
             <img src="/src/res/arc.svg" alt="arc browser logo" class="w-9 h-9 rounded-md shadow-inner">
             <p id="arctext" class="text-base px-2 py-1 dark:text-dark_txtcolor">Using <span class="jstext font-alexandria">Arc</span>? Try this out!</p>
         </div>
