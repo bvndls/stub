@@ -1,8 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+
   // generate random colors
   function getRandomColor() {
     const colors = ['#D5EFFD', '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
     return colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  // arc browser detection
+  window.onload = function() {
+    let arcPaletteTitle = getComputedStyle(document.documentElement)
+        .getPropertyValue('--arc-palette-title')
+        .trim(); 
+    
+    if (!arcPaletteTitle) {
+        let aarcFeatureDiv = document.getElementById('arcfeature');
+        if (aarcFeatureDiv) {
+            aarcFeatureDiv.style.display = 'none';
+        }
+    }
   }
 
   // define elements from stylesheet
@@ -54,9 +70,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
-// arc checker
-console.log(
-  getComputedStyle(document.documentElement)
-  .getPropertyValue('--arc-palette-title') ? 'Is Arc' : 'Is Not Arc'
-);
