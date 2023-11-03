@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!arcPaletteTitle) {
         let arcFeatureDiv = document.getElementById('arcfeature');
-        if (aarcFeatureDiv) {
+        if (arcFeatureDiv) {
             arcFeatureDiv.style.display = 'none';
         }
     }
