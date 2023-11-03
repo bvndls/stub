@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .trim(); 
     
     if (!arcPaletteTitle) {
-        let aarcFeatureDiv = document.getElementById('arcfeature');
+        let arcFeatureDiv = document.getElementById('arcfeature');
         if (aarcFeatureDiv) {
-            aarcFeatureDiv.style.display = 'none';
+            arcFeatureDiv.style.display = 'none';
         }
     }
   }

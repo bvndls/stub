@@ -22,12 +22,14 @@
             as soon as possible</p>
     </div>
     <div id="footer" class="flex justify-center items-center gap-2 mt-auto p-2">
-        <!-- should be disabled on mobile -->
-        <div id="arcfeature" class="arcfeature absolute left-2 bottom-2 mr-auto h-auto w-auto rounded-md bg-secondary dark:bg-dark_secondary flex items-center justify-center transition duration-200 ease-in-out dark:hover:bg-hover hover:bg-hover arc:bg-hover arc:hover:bg-focus">
-            <img src="/src/res/arc.svg" alt="arc browser logo" class="w-9 h-9 rounded-md shadow-inner">
-            <p id="arctext" class="text-base px-2 py-1 dark:text-dark_txtcolor">Using <span class="jstext font-alexandria">Arc</span>? Try this out!</p>
-        </div>
-        <!-- end -->
+        <button id="arcfeature" class="group mr-auto h-auto w-auto flex absolute left-2 bottom-2">
+            <div id="arc-icon-container" class="w-9 h-9 shadow-inner mr-auto flex justify-center items-center rounded-md bg-secondary transition-colors duration-300 group-hover:bg-hover dark:bg-dark_secondary dark:hover:bg-hover arc:bg-hover arc:hover:bg-focus hover:rounded-r-none">
+                <img src="/src/res/arc.svg" alt="arc browser logo" class="w-9 h-9 rounded-md shadow-inner">
+            </div>
+            <div id="arc-btn-caption" class="w-0 h-9 absolute ml-9 flex justify-center items-center rounded-r-lg rounded-l- whitespace-nowrap overflow-hidden transition-all duration-300 group-hover:w-48 group-hover:bg-hover bg-secondary">
+                <p id="arctext" class="text-base dark:text-dark_txtcolor w-auto h-auto justify-center">Using <span class="jstext font-alexandria">Arc</span>? Try this out!</p>
+            </div>
+        </button>
         <a href="https://linkedin.com/in/bvndls/">
             <img src="/src/res/linkedin.svg" alt="linkedin profile page" class="w-10 h-10 dark:invert">
         </a>
