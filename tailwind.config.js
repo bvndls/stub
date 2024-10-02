@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
@@ -27,16 +29,6 @@ module.exports = {
       cutout: "var(--arc-palette-cutoutColor)",
       title: "var(--arc-palette-title)",
       subtitle: "var(--arc-palette-subtitle)",
-      "background-simple": "var(--arc-background-simple-color)",
-      "background-gradient0": "var(--arc-background-gradient-color0)",
-      "background-gradient1": "var(--arc-background-gradient-color1)",
-      "background-gradient2": "var(--arc-background-gradient-color2)",
-      "background-gradient-overlay0":
-        "var(--arc-background-gradient-overlay-color0)",
-      "background-gradient-overlay1":
-        "var(--arc-background-gradient-overlay-color1)",
-      "background-gradient-overlay2":
-        "var(--arc-background-gradient-overlay-color2)"
     },
     extend: {
       keyframes: {
