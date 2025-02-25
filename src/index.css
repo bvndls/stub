@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* @media (prefers-color-scheme: arc) {
+  body {
+    background-image: linear-gradient(to bottom right, var(--arc-palette-hover), var(--arc-palette-foregroundSecondary));
+  }
+} */
+
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: invert();
+  }
+}
+
+@font-face {
+  font-family: 'omotion';
+  src: url("fonts/omotion.otf") format(opentype)
+}
+
+@font-face {
+  font-family: 'alexandria';
+  src: url("fonts/alexandria.ttf") format(truetype)
+}
+
+@theme {
+  --font-omotion: omotion;
+  --font-alexandria: alexandria;
+}
+
+@keyframes colorChange {
+  0% { color: #D5EFFD; }
+  20% { color: #FF0000; }
+  40% { color: #00FF00; }
+  60% { color: #0000FF; }
+  80% { color: #FFFF00; }
+  100% { color: #D5EFFD; }
+}
+
+.animate-color {
+  animation: colorChange 10s infinite;
+}
